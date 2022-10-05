@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B Listing</title>
     <link rel="stylesheet" href="dist/css/output.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <!--Navigation Bar-->
+    <nav class="absolute right-0 left-0 z-10 text-white">
         <div class="w-9/12 mx-auto py-4 flex justify-between items-center font-comf">
             <div>
                 <a href="#" class="text-xl">B Listing</a>
@@ -25,33 +28,372 @@
         </div>
     </nav>
 
+    <!--Hero Banner-->
     <div class="relative h-screen">
-        <img src="src/assets/images/hero/banner.jpg" alt="" class="h-full w-full object-cover">
+        <img src="src/assets/images/hero/banner.jpg" alt="" class="h-full w-full object-cover opacity-90">
         <div class="absolute inset-0 bg-black/50"></div>
-        <div class="absolute inset-0 h-full w-full">
+        <div class="absolute inset-0 h0full w-full">
             <div class="flex min-h-full w-full items-center justify-center">
-                <div>
-                    <p class="text-4xl capitalize font-bold mb-4 font-comf">Discover places that people love!</p>
-                    <p class="text-lg">We will help you find the best places in the world.</p>
-                </div>
-
-                <div>
-                    <div>
-                        <input type="text" placeholder="Location" class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none">
+                <div class="space-y-6">
+                    <div class="text-white text-center">
+                        <p class="text-4xl capitalize font-bold mb-2 font-comf">Discover places that people love!</p>
+                        <p class="text-lg">We will help you find the best places in the world.</p>
                     </div>
-                    <div>
-                        <input type="text" placeholder="Location" class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none">
+    
+                    <div class="flex gap-5">
+                        <div>
+                            <input type="text" placeholder="Location" class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="I'm Looking for..." class="rounded-md w-80 bg-white text-gray-600 py-3 px-4 focus:outline-none">
+                        </div>
+                        <div>
+                            <button class="rounded-md py-2.5 px-6 bg-amber-500 text-lg text-white hover:bg-amber-600">
+                                <span class="material-icons align-middle">search</span>
+                                Search
+                            </button>
+                        </div>
                     </div>
+    
                     <div>
-                        <button class="rounded-md py-2.5 px-6 bg-amber-500 text-lg text-white hover:bg-amber-600">Search</button>
+                        <ul class="flex gap-5 justify-center text-sm text-white">
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">restaurant_menu</span>
+                                    Restaurants
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">local_cafe</span>
+                                    Cafe
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">fitness_center</span>
+                                    Gym
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">local_hospital</span>
+                                    Hospital
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">school</span>
+                                    School
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">shopping_cart</span>
+                                    Shopping
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-                <div>
-                    
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Body (main content)-->
+    <div>
+        
+        <!-- Popular section -->
+        <div class="bg-gray-50 py-12">
+
+            <div class="w-9/12 mx-auto">
+
+                <!-- head lines-->
+                <div class="text-center mb-12">
+                    <p class="text-4xl font-bold text-gray-600 mb-3">Popular places</p>
+                    <p class="text-gray-600">Discover most searched places</p>
+                </div>
+
+                <!-- cards section -->
+                <div>
+                    <div class="grid grid-cols-3 gap-6 mx-auto">
+                        <!--  card 1  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/dentist.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-white">grade</span>
+                                    <span class="ml-2 text-xs text-gray-600">302 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Dr. John Clinic</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    5th Street, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 2  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/zee mobile repair.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="material-icons text-white">grade</span>
+                                    <span class="ml-2 text-xs text-gray-600">230 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Zee Mobile Repair</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Cross Way, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 3  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/gym.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2 relative">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600">422 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Grade Gym</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Main Tower, Texas
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">gym</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">fitness</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$$</span>
+                                </div>
+                                <div class="absolute right-3 bottom-3">
+                                    <span class="material-icons text-red-500">local_fire_department</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 4  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/burger house.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2 relative">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600">302 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Burger House</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    5th Street, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$</span>
+                                </div>
+                                <div class="absolute right-3 bottom-3">
+                                    <span class="material-icons text-red-500">local_fire_department</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 5  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/beauty salon.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600">302 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Julie Beauty Salon</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    5th Street, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 6  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/fruit shop.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600">302 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Healthy Fruits</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    5th Street, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 7  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/restaurant louche.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600">302 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">The Best Louche</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    5th Street, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 8  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/indian food.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2 relative">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600">302 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Indian Desi Tadka</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    5th Street, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$</span>
+                                </div>
+                                <div class="absolute right-3 bottom-3">
+                                    <span class="material-icons text-red-500">local_fire_department</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  card 9  -->
+                        <div class="bg-white rounded-md shadow-md max-w-xl overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="src/assets/images/couplel dinner.jpg" alt="dentist" class="w-full object-cover">
+                            </div>
+                            <div class="px-5 py-4 space-y-2">
+                                <!--stars-->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600">302 Reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600">Couple Dinner Time</p>
+                                <p class="text-sm text-gray-600">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    5th Street, California
+                                </p>
+                                <div>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">clinic</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">hospital</span>
+                                    <span class="text-xs px-2 py-0.5 bg-amber-200 border border:bg-amber-300 text-amber-700 rounded-full">$$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 text-center">
+                        <button class="rounded-md px-6 py-2 bg-white border border-gray-100 text-lg shadow hover:shadow-xl text-gray-600 font-comf">
+                            🚀 Discover More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Discover by categories section -->
+        <div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
